@@ -1,0 +1,68 @@
+# -------------------------
+# Patroni Credentials
+# -------------------------
+PATRONI_RESTAPI_USERNAME=admin
+PATRONI_RESTAPI_PASSWORD=6244JlkvABafhiZ4KDwUHSsgiz47X9scX9mBtOX
+PATRONI_SUPERUSER_USERNAME=postgres
+PATRONI_SUPERUSER_PASSWORD=bdtTVSsXZHxJnBNhNe47PB4isQbe5c5alklkb1G
+PATRONI_REPLICATION_USERNAME=replicator
+PATRONI_REPLICATION_PASSWORD=QS66WtPo4WgX3Pmn2RjWVbAV9hfCFE5JkBaajrP
+PATRONI_ADMIN_PASSWORD=admin
+
+# -------------------------
+# Cluster Node IPs
+# -------------------------
+NODE_IP=192.168.200.76
+NODE1_IP=192.168.200.74
+NODE2_IP=192.168.200.75
+NODE3_IP=192.168.200.76
+
+# -------------------------
+# General
+# -------------------------
+RESTART_POLICY=unless-stopped
+
+# -------------------------
+# PostgreSQL superuser (init + local admin)
+# -------------------------
+POSTGRES_PASSWORD=U0o1swdZrj0lrC2xaVZXXFUIgIyBCZpbhWns1Kg
+
+# -------------------------
+# PowerDNS Authoritative
+# -------------------------
+# With PostgreSQL + PowerAdmin: zones live in PA_DB_NAME (single DB). gpgsql-dbname in pdns/pdns.conf must match PA_DB_NAME.
+PDNS_DB_USER=pdns
+PDNS_DB_PASSWORD=kT6TKtI5lZZjDuJCrRDB39DN8cop2fFTJ0qTGdQ
+PDNS_API_KEY=1qp2ZCOaHQOm4nRppZXpGjaxXCpqiE94dwRf8HS
+
+# -------------------------
+# PowerDNS Recursor
+# -------------------------
+PDNS_RECURSOR_API_KEY=NEUshIlujyhrHyPXPY2dYn9SzWufaZ3pFyFLYh3
+
+# -------------------------
+# DNSDist
+# -------------------------
+DNSDIST_API_KEY=OkxsH5verUP97RnMQOvaSqUVeDM8za6DV1AvfLUdwelkjsefsfs
+# Must be a fully-qualified domain with trailing dot
+DNSDIST_AUTH_ZONE=65536.ir.
+
+# -------------------------
+# Initial zone to create at bootstrap
+# -------------------------
+PDNS_AUTH_ZONE=65536.ir
+
+# -------------------------
+# PowerAdmin
+# -------------------------
+PA_DB_NAME=poweradmin
+PA_DB_USER=poweradmin
+PA_DB_PASSWORD=uo7I6q58czgUsuYNamB0g4jtubHdda1gaxY8jSZD
+PA_ADMIN_PASSWORD=aKA0EwsfZNpWFRjO1w5VAh5JTjuaWZd6QkY1KnD
+
+# -------------------------
+# Zone defaults shown in PowerAdmin
+# -------------------------
+DNS_NS1=ns1.65536.ir
+DNS_NS2=ns2.65536.ir
+DNS_HOSTMASTER=hostmaster.65536.ir
